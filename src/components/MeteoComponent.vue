@@ -52,6 +52,8 @@
         },
         methods: {
             goMeteo(event) {
+                console.log(this.api_code)
+                
                 if (event.key == "Enter") {
                     axios
                     .get(`${this.url_recherche}q=${this.requete}&units=metric&APPID=${this.api_code}&lang=fr`)
@@ -65,6 +67,7 @@
             }
         }
     }
+
 
 </script>
 

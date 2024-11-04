@@ -82,4 +82,6 @@ npm run serve
 
 - Choisir un nom de site ("check availability")
 
+- Ajouter une variable d'environnement 
+
 - Deployer 
