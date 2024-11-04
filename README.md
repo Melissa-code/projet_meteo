@@ -2,29 +2,30 @@
 
 Cette application web permet aux utilisateurs de rechercher la météo en temps réel d'une ville en saisissant simplement son nom en français dans la barre de recherche.
 
-Adresse de l'application : [projet_meteo](https://applicationmeteo.netlify.app/)
+- Pour voir et tester l'application : [application-meteo](https://applicationmeteo.netlify.app/)
 
-
-## Fonctionnalités
-
-Recherche de la météo : Entrez le nom d'une ville (en français) dans le champ de recherche.
-
-Informations météo : Obtenez la température actuelle de la ville et une description des conditions météorologiques, comme "ensoleillé", "nuageux", "pluvieux", etc...
 
 
 ## Aperçu
 
-<img src="src/assets/images/screenshot.png" alt="Aperçu de l'application" width="200" />
+<img src="src/assets/images/screenshot.png" alt="Aperçu de l'application" width="400" />
 
 
-![Aperçu de l'application](src/assets/images/screenshot.png)
+
+## Fonctionnalités
+
+- Recherche de la météo : Entrez le nom d'une ville (en français) dans le champ de recherche.
+
+- Informations météo : Obtenez la température actuelle de la ville et une description des conditions météorologiques, comme "ensoleillé", "nuageux", "pluvieux", etc...
+
 
 
 ## Prérequis 
 
 - [Node JS](https://nodejs.org). 
 
-Vérifier l'installation avec `node -v`
+- Vérifier l'installation avec `node -v`
+
 
 
 ## Technologies utilisées
@@ -36,20 +37,21 @@ Vérifier l'installation avec `node -v`
 - API météopenweathermap : API tierce pour récupérer les données météo en temps réel [openweathermap](https://openweathermap.org). Créer un compte gratuit pour avoir une clé d'API et une URL 
 
 
+
 ## Installation et utilisation
 
-### Cloner le dépôt 
+### 1. Cloner le dépôt 
 ```
 git clone https://github.com/Melissa-code/projet_meteo.git
 cd projet_meteo 
 ```
 
-### installer les dépendances
+### 2. installer les dépendances
 ```
 npm install
 ```
 
-### Configurer la clé API
+### 3. Configurer la clé API
 
 - Créer un fichier .env.local à la racine du projet qui ne sera pas commité (cf. fichier .gitignore)
 
@@ -69,7 +71,9 @@ ctrl + C
 npm run serve
 ```
 
-## Deploiement de l'application 
+
+
+## Deployer l'application 
 
 - Aller sur le site [Netlify](https://app.netlify.com)
 
