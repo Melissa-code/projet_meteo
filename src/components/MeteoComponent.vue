@@ -8,11 +8,11 @@
         <div class="form-group mb-5">
             <label for="position">Entrez le nom d'une ville : </label>
             <input 
-            type="text" 
-            id="position"
-            class="form-control mt-2"
-            v-model="requete"
-            v-on:keypress="goMeteo"
+                type="text" 
+                id="position"
+                class="form-control mt-2"
+                v-model="requete"
+                v-on:keypress="goMeteo"
             >
         </div>
 
@@ -52,32 +52,24 @@
         },
         methods: {
             goMeteo(event) {
-                console.log(this.api_code)
-                
                 if (event.key == "Enter") {
                     axios
                     .get(`${this.url_recherche}q=${this.requete}&units=metric&APPID=${this.api_code}&lang=fr`)
                     .then(reponse => {
-                        console.log(reponse)
                         this.temps = reponse.data
-                        console.log(this.temps)
                     })
                     this.requete = ""
                 }
             }
         }
     }
-
-
 </script>
 
 
 <style>
-
     .texte-affichage {
         font-size: 24px;
         font-weight: 300;
         line-height: 1.2;
     }
-
 </style>

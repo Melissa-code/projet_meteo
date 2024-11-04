@@ -14,7 +14,10 @@ Informations météo : Obtenez la température actuelle de la ville et une descr
 
 ## Aperçu
 
-![Aperçu de l'application](images/screenshot.png)
+<img src="src/assets/images/screenshot.png" alt="Aperçu de l'application" width="200" />
+
+
+![Aperçu de l'application](src/assets/images/screenshot.png)
 
 
 ## Prérequis 
@@ -82,6 +85,6 @@ npm run serve
 
 - Choisir un nom de site ("check availability")
 
-- Ajouter une variable d'environnement 
+- Ajouter une variable d'environnement (key/value & sélectionner "Deploy without sensitive variables")
 
 - Deployer 
